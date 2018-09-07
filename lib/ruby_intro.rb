@@ -3,7 +3,15 @@
 # Part 1
 
 def sum arr
-  # YOUR CODE HERE
+    if arr.empty? == true 
+      return 0
+    else
+      total = 0
+      while arr.empty? == false
+        total = total + arr.pop
+      end
+      return total
+    end  
 end
 
 def max_2_sum arr
